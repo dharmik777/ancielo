@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    // "How long do you want your password to be? Must be between 8 and 128 characters"
+//      validate number of characters      
+// "Must choose at least one of the character options special characters, uppercase, lowercase, or numeric"
+//      "special characters"
+//          "yes/no"
+//      "uppercase"
+//          "yes/no"
+//      "lowercase"
+//          "yes/no"
+//      "numeric"
+//          "yes/no"
+// "Invalid response. Start Over"
+// "generate password if response is correct" 
+
+
+
+// Ask the user a series of questions
+// a) length of password (numeric input)
+// b) validate length is between 8 and 128.
+// c) type of characters to include - special characters, uppercase, lowercase, numeric(series of yes/no confirms)
+// d) Validate the user selected at least one character type.
+
+// Any invalid response will terminate password generation and the user must start over.
+
+// Once the user has entered valid responses, generate a password that meets their criteria and display it in the box. -->
+
+
+
+<script class="text/javascript">
+
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+var password = prompt("How long do you want your password to be? Must be between 8 and 128 characters");
+
+
+
+</script>
+
+    
+</body>
+</html>
